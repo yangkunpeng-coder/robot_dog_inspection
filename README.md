@@ -116,11 +116,3 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 python3 scripts/check_results.py \
   artifacts/final/{static,crossing,blocking_verified,detour,scan_loss}/metrics.json
 ~~~
-
-7 项离线测试已通过，覆盖地图坐标与读写、生成网格的逐格覆盖、X30 模型及五种工况解析、未知区域的车体扫掠拒绝、旋转与包含情况下的净距、旋转目标停靠点、仿真时间下的车辆停留与驶离。`metrics.json` 记录终态与事件，`trajectory.csv` 记录真值位姿、净距和速度，`mission.json` 保存解析后的参数。`global_replans` 统计首条之后的非空规划消息，实际绕行需结合轨迹判断。 [离线测试](tests/test_offline.py) · [验收脚本](scripts/check_results.py)
-
-## 数据与工具使用
-
-厂房栅格和 X30 URDF/STL 来自项目提供的原始资料，运行资源整理在 `doc/maps` 与 `doc/models/x30`。ROS 2、Nav2、Gazebo、ros_gz、gz_ros2_control、Cyclone DDS、rosbag2 和 OpenCV 提供通信、导航、仿真、控制与录制能力。本仓库编写资源生成、任务编排、保护与评测逻辑，并配置这些组件完成上述演示。
-
-项目使用 OpenAI Codex 辅助资料分析、代码实现、调试、测试和文档整理。预训练模型使用情况为无，结果来自归档仿真数据。
