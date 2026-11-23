@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.8)
+project(smelter_description)
+find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+ament_python_install_package(${PROJECT_NAME})
+
+set(X30_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/../../doc/models/x30")
+install(FILES "${X30_SOURCE}/X30.urdf" DESTINATION share/${PROJECT_NAME}/x30)
+install(DIRECTORY "${X30_SOURCE}/meshes" DESTINATION share/${PROJECT_NAME}/x30)
+ament_package()

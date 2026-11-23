@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "reason": "Docked and stationary with verified Gazebo clearance",
+  "mission": "factory_demo",
+  "scenario": "blocking",
+  "sim_seconds": 50.95,
+  "wall_seconds": 57.438,
+  "path_length_m": 6.3377,
+  "wait_seconds": 16.2,
+  "global_plans": 20,
+  "global_replans": 19,
+  "collision_events": 0,
+  "min_scan_clearance_m": 0.3674951337565179,
+  "min_target_clearance_m": 1.7488146419793924,
+  "min_cart_clearance_m": 0.3678436859419238,
+  "max_lateral_deviation_m": 0.0370201053991598,
+  "final_target_clearance_m": 1.7828794801314154,
+  "final_yaw_error_rad": 0.04259849137322114,
+  "samples": 509,
+  "events": [
+    {
+      "sim_s": 0.0,
+      "event": "navigating",
+      "detail": ""
+    },
+    {
+      "sim_s": 3.75,
+      "event": "waiting",
+      "detail": "Laser points in the forward stop zone"
+    },
+    {
+      "sim_s": 7.2,
+      "event": "cart_holding",
+      "detail": ""
+    },
+    {
+      "sim_s": 15.2,
+      "event": "cart_departed",
+      "detail": ""
+    },
+    {
+      "sim_s": 19.95,
+      "event": "resuming",
+      "detail": "navigating"
+    },
+    {
+      "sim_s": 19.95,
+      "event": "navigating",
+      "detail": ""
+    },
+    {
+      "sim_s": 23.4,
+      "event": "cart_finished",
+      "detail": ""
+    },
+    {
+      "sim_s": 36.115,
+      "event": "docking",
+      "detail": ""
+    },
+    {
+      "sim_s": 50.27,
+      "event": "settling",
+      "detail": ""
+    },
+    {
+      "sim_s": 50.95,
+      "event": "succeeded",
+      "detail": "Docked and stationary with verified Gazebo clearance"
+    }
+  ],
+  "contacts": []
+}

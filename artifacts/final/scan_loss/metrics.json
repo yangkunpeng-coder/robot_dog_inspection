@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "reason": "Laser scan outage stopped the moving base",
+  "mission": "factory_demo",
+  "scenario": "scan_loss",
+  "sim_seconds": 2.35,
+  "wall_seconds": 8.326,
+  "path_length_m": 0.4595,
+  "wait_seconds": 0.0,
+  "global_plans": 3,
+  "global_replans": 2,
+  "collision_events": 0,
+  "min_scan_clearance_m": 0.6593295289727662,
+  "min_target_clearance_m": 7.660328669776575,
+  "min_cart_clearance_m": null,
+  "max_lateral_deviation_m": 0.0028054548207049564,
+  "final_target_clearance_m": 7.660328669776575,
+  "final_yaw_error_rad": 0.006718554413829736,
+  "samples": 22,
+  "events": [
+    {
+      "sim_s": 0.0,
+      "event": "navigating",
+      "detail": ""
+    },
+    {
+      "sim_s": 1.7,
+      "event": "scan_loss_injected",
+      "detail": ""
+    },
+    {
+      "sim_s": 2.35,
+      "event": "succeeded",
+      "detail": "Laser scan outage stopped the moving base"
+    }
+  ],
+  "contacts": []
+}

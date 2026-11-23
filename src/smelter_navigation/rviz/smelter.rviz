@@ -1,0 +1,64 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: Factory map
+      Enabled: true
+      Topic:
+        Value: /map
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/RobotModel
+      Name: X30
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/LaserScan
+      Name: LiDAR
+      Enabled: true
+      Color Transformer: FlatColor
+      Color: 238; 74; 40
+      Style: Points
+      Size (Pixels): 3
+      Topic:
+        Value: /scan
+        Reliability Policy: Best Effort
+    - Class: rviz_default_plugins/Path
+      Name: NavFn plan
+      Enabled: true
+      Color: 35; 180; 90
+      Topic:
+        Value: /plan
+    - Class: rviz_default_plugins/Polygon
+      Name: Stop zone
+      Enabled: true
+      Color: 240; 70; 40
+      Topic:
+        Value: /safety/stop_zone
+  Enabled: true
+  Global Options:
+    Background Color: 43; 47; 54
+    Fixed Frame: map
+    Frame Rate: 20
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Value: /initialpose
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Mission area
+      Scale: 48
+      X: -39
+      Y: -26.7
+      Angle: 0
+Window Geometry:
+  Height: 840
+  Width: 1200

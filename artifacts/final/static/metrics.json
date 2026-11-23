@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "reason": "Docked and stationary with verified Gazebo clearance",
+  "mission": "factory_demo",
+  "scenario": "static",
+  "sim_seconds": 33.15,
+  "wall_seconds": 39.471,
+  "path_length_m": 6.2904,
+  "wait_seconds": 0.0,
+  "global_plans": 20,
+  "global_replans": 19,
+  "collision_events": 0,
+  "min_scan_clearance_m": 0.6593295289727662,
+  "min_target_clearance_m": 1.826188536700203,
+  "min_cart_clearance_m": null,
+  "max_lateral_deviation_m": 0.051359552511309005,
+  "final_target_clearance_m": 1.8317911896845667,
+  "final_yaw_error_rad": 0.04341613930731203,
+  "samples": 330,
+  "events": [
+    {
+      "sim_s": 0.0,
+      "event": "navigating",
+      "detail": ""
+    },
+    {
+      "sim_s": 20.625,
+      "event": "docking",
+      "detail": ""
+    },
+    {
+      "sim_s": 32.455,
+      "event": "settling",
+      "detail": ""
+    },
+    {
+      "sim_s": 33.15,
+      "event": "succeeded",
+      "detail": "Docked and stationary with verified Gazebo clearance"
+    }
+  ],
+  "contacts": []
+}

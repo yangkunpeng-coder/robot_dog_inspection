@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>smelter_gazebo</name>
+  <version>0.1.0</version>
+  <description>Generate a Gazebo Fortress smelter world from a ROS occupancy map.</description>
+  <maintainer email="maintainers@example.org">Robot Dog Inspection</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

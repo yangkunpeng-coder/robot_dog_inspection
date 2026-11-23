@@ -1,0 +1,67 @@
+{
+  "label": "factory_demo",
+  "scenario": "static",
+  "start": {
+    "x": -39.0,
+    "y": -23.2,
+    "yaw": -1.57079632679
+  },
+  "pre": {
+    "x": -39.00000000001508,
+    "y": -29.219999999855883,
+    "yaw": -1.57079632679
+  },
+  "goal": {
+    "x": -39.00000000001214,
+    "y": -29.819999999855884,
+    "yaw": -1.57079632679
+  },
+  "target": {
+    "id": "demo_slag_pot",
+    "pose": [
+      -39.0,
+      -32.3,
+      0.0
+    ],
+    "shape": "circle",
+    "radius": 0.63,
+    "height": 1.05,
+    "add_model": true
+  },
+  "docking": {
+    "desired_clearance": 1.5,
+    "min_clearance": 1.0,
+    "max_clearance": 2.0,
+    "pre_offset": 0.6,
+    "yaw_tolerance": 0.1,
+    "settled_time": 0.6,
+    "max_stopped_speed": 0.03
+  },
+  "footprint": [
+    [
+      -0.35,
+      -0.2
+    ],
+    [
+      0.35,
+      -0.2
+    ],
+    [
+      0.35,
+      0.2
+    ],
+    [
+      -0.35,
+      0.2
+    ]
+  ],
+  "cart": null,
+  "timeout": 140.0,
+  "robot_model": {
+    "length": 0.7,
+    "width": 0.4,
+    "height": 0.47503296505408477,
+    "scale": 0.6919767508996112
+  },
+  "ign_partition": "smelter_11565"
+}

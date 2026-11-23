@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+from smelter_tasks.demo_recorder import main
+
+main()

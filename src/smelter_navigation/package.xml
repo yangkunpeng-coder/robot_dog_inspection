@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>smelter_navigation</name>
+  <version>0.1.0</version>
+  <description>Smelter navigation map, Nav2 parameters and RViz configuration.</description>
+  <maintainer email="maintainers@example.org">Robot Dog Inspection</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>nav2_amcl</exec_depend>
+  <exec_depend>nav2_map_server</exec_depend>
+  <exec_depend>nav2_bt_navigator</exec_depend>
+  <exec_depend>nav2_controller</exec_depend>
+  <exec_depend>nav2_planner</exec_depend>
+  <exec_depend>nav2_navfn_planner</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+  <exec_depend>nav2_collision_monitor</exec_depend>
+  <exec_depend>dwb_core</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

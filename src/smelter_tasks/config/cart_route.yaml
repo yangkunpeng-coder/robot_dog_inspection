@@ -1,0 +1,16 @@
+# Cart motion is driven by simulation time. Trigger delay starts with navigation.
+size: [4.0, 3.0, 3.5]
+start: [-43.35, -26.40, 0.0]
+speed: 0.68
+trigger_delay: 0.10
+scenarios:
+  detour:
+    # Start closer to the crossing so Nav2 sees the obstruction with room to turn.
+    start: [-41.65, -26.40, 0.0]
+checkpoints:
+  - position: [-39.0, -26.40]
+    hold:
+      crossing: 0.0
+      blocking: 8.0
+      detour: 36.0
+  - position: [-34.0, -26.40]

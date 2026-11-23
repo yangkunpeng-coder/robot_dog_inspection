@@ -1,0 +1,41 @@
+{
+  "passed": false,
+  "reason": "Collision or dog/cart footprint overlap",
+  "mission": "factory_demo",
+  "scenario": "static",
+  "sim_seconds": 2.75,
+  "wall_seconds": 8.706,
+  "path_length_m": 8.3501,
+  "wait_seconds": 0.0,
+  "global_plans": 3,
+  "global_replans": 2,
+  "collision_events": 1,
+  "min_scan_clearance_m": 0.6593295289727662,
+  "min_target_clearance_m": 0.0,
+  "min_cart_clearance_m": null,
+  "max_lateral_deviation_m": 0.00942821653063436,
+  "final_target_clearance_m": 0.0,
+  "final_yaw_error_rad": 1.8418981895251818e-09,
+  "samples": 27,
+  "events": [
+    {
+      "sim_s": 0.0,
+      "event": "navigating",
+      "detail": ""
+    },
+    {
+      "sim_s": 2.75,
+      "event": "failed",
+      "detail": "Collision or dog/cart footprint overlap"
+    }
+  ],
+  "contacts": [
+    {
+      "sim_s": 2.735,
+      "entities": [
+        "target_slag_pot::body::pot_collision",
+        "x30::base_footprint::base_footprint_fixed_joint_lump__hull_collision"
+      ]
+    }
+  ]
+}

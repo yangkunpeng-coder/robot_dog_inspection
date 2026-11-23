@@ -1,0 +1,16 @@
+/build/
+/install/
+/log/
+/artifacts/*
+!/artifacts/final/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+/temp/
+/report/
+/.agents/
+/skills-lock.json
+/机器狗巡检-实现/
+/机器狗巡检-实现-v1.0/
+/交付/
